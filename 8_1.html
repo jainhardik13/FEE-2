@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        document.addEventListener
+        ("DOMContentLoaded",function()
+        {
+            var params = new URLSearchParams
+            (window.location.search);
+            var stdname = params.get('name');
+            var stddob = params.get('dob');
+            var stdgender = params.get('Gender');
+            var stdemail = params.get('email');
+            var stdphone = params.get('phone number');
+            var stdaddress = params.get('address');
+            var stdcourse = params.get('course');
+            var pname = params.get('pname');
+            var pemail = params.get('pemail');
+            var pphone = params.get('pphone number');
+            var paddress = params.get('paddress');
+            var school = params.get('school');
+            var board = params.get('board');
+            var year = params.get('year');
+            var percentage = params.get('percentage');
+            var resultElement = document.getElementById('result');
+            resultElement.innerHTML = stdname + '<br>' + stddob + '<br>' + stdgender + '<br>' + stdemail + '<br>' + stdphone + '<br>' + stdaddress+ '<br>' + stdcourse + '<br>' + pname + '<br>' + pemail + '<br>' + pphone + '<br>' + paddress + '<br>' + school + '<br>' + board + '<br>' + year + '<br>' + percentage ; 
+        }); 
+    </script>
+</body>
+</html>
