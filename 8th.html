@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="8th.css">
+    <!--<style type="text/css">
+        form {
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        fieldset{
+            text-align: center;
+        }
+        input {
+            align-items: center;
+        }
+        label{
+            color: beige;
+        }
+    </style>-->
 </head>
-<body>
-    <center><h1>College Registration Form</h1></center>
-    <fieldset>
+<body text="white" style="background-color: black;">
+    <!--<center>--><h1>College Registration Form</h1><!--</center>-->
+    <fieldset style="border: 2px solid yellow; border-style: dashed; border-bottom-width: 5px;">
         <legend>Student Details:</legend>
-        <center>
+        <!-- <center> -->
             <form action="8_1.html" method="get">
             <label for="name">Enter your name :</label><br>
             <input type="text" id="name" name="name"><br>
@@ -36,9 +54,9 @@
             <br>
     </fieldset>
     <br>
-    <fieldset>
-        <legend><center>Parent Details:</center></legend>
-        <center>
+    <fieldset style="border: 2px solid blue; border-style: dotted; border-bottom-width: 5px;">
+        <legend><!--<center>-->Parent Details:<!--</center>--></legend>
+        <!--<center>-->
             <label for="pname">Enter Parent's name :</label><br>
             <input type="text" id="pname" name="pname"><br>
             <label for="pemail">Parent's Email :</label><br>
@@ -47,12 +65,12 @@
             <input type="tel" id="pphone number" name="pphone number"><br>
             <label for="paddress">Enter Parent's Address :</label><br>
             <textarea id="paddress" name="paddress" rows="4" cols="5"></textarea><br>
-        </center>
+        <!--</center>-->
     </fieldset>
     <br>
-    <fieldset>
-        <legend><center>Previous Studies and Qualification Details:</center></legend>
-        <center>
+    <fieldset style="border: 2px solid red; border-style: double; border-bottom-width: 5px;">
+        <legend><!--<center>-->Previous Studies and Qualification Details:<!--</center>--></legend>
+        <!--<center>-->
             <label for="school">School/College Name :</label><br>
             <input type="text" id="school" name="school"><br>
             <label for="board">Board/University :</label><br>
@@ -61,11 +79,11 @@
             <input type="text" id="year" name="year"><br>
             <label for="percentage">Percentage/CGPA :</label><br>
             <input type="text" id="percentage" name="percentage"><br>
-        </center>
+        <!--</center>-->
     </fieldset>
     <br>
     <center><input type="submit" id="submit" name="submit"></center>
         </form>
-        </center>
+        <!--</center>-->
 </body>
 </html>
