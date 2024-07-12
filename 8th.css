@@ -14,3 +14,12 @@ input {
 label{
     color: beige;
 }
+#body{
+   background-color: black;
+}
+.fieldset
+{
+    border: 2px solid blue; 
+    border-style: dotted; 
+    border-bottom-width: 5px;
+}
