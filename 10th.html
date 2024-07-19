@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/" rel="js"></script> -->
+    <title>Document</title>
+    <style>
+        .item1{grid-area: header; padding: 5px; text-align: center;}
+        .item2 {grid-area: menu; padding: 5px; text-align: center;}
+        .item3{grid-area: main; padding: 5px; text-align: center;}
+        .item4{grid-area: right; padding: 5px; text-align: center;}
+        .item5{grid-area: footer; padding: 5px; text-align: center;}
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            'header header header header header header'
+            'menu menu menu main main main'
+            'menu menu menu footer footer right';
+            gap: 10px;
+            border: 5px solid black;
+            padding: 10px;
+        }
+
+        .grid-container > div
+        {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="flex-container">
+        <div class="flex-item">A</div>
+        <div class="flex-item">B</div>
+        <div class="flex-item">C</div>
+        <div class="flex-item">D</div>
+        <div class="flex-item">E</div>
+    </div> -->
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div>
+</body>
+</html>
