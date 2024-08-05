@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    function validateform()
+    {
+        var name=document.myform.name.value;
+        var password=document.myform.password.value;
+        if (name == null || name == "")
+        {
+            alert("Name can't be blank");
+            return false;
+        }
+        else if(password.length < 6)
+        {
+            alert("Password must be at least 6 characters long.");
+            return false;
+        }
+    }
+</script>
+<body>
+    <form action="15th.html" onsubmit="return validateform()">
+        Name : <input type="text" name="name" ><br>
+        Password : <input type="password" name="password"><br>
+        <input type="submit" name="register">
+    </form>
+
+    <div>
+        <span>Select the course : </span>
+        <select id="course_list">
+            <option value="0">Select</option>
+            <option value="1">Angular</option>
+            <option value="2">React JS</option>
+            <option value="3">Java</option>
+            <option value="3">Spring Boot</option>
+            <option value="3">Dev ops</option>
+        </select>
+    </div>
+    <br>
+    <input type="button" value="submit" onclick="course_validation();"/>
+    <script type="text/javascript">
+        function course_validation()
+        {
+            var e = document.getElementById("course_list");
+            var optionselindex = e.options
+        }
+</body>
+</html>

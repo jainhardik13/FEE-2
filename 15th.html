@@ -1,0 +1,44 @@
+// Define a function to create a new student object
+const createStudent = (name, age, college, location) => {
+  return {
+    name,
+    age,
+    college,
+    location,
+    displayDetails: () => {
+      console.log(`Name: ${name}`);
+      console.log(`Age: ${age}`);
+      console.log(`College: ${college}`);
+      console.log(`Location: ${location}`);
+    }
+  };
+};
+
+// Create a new student object
+const student1 = createStudent('John Doe', 20, 'MIT', 'Boston');
+
+// Display student details
+student1.displayDetails();
+
+
+
+
+
+class Student {
+    constructor(name, age, college, location) {
+      this.name = name;
+      this.age = age;
+      this.college = college;
+      this.location = location;
+    }
+  
+    displayDetails = () => {
+      console.log(`Name: ${this.name}`);
+      console.log(`Age: ${this.age}`);
+      console.log(`College: ${this.college}`);
+      console.log(`Location: ${this.location}`);
+    };
+  }
+  
+  const student1 = new Student('John Doe', 20, 'MIT', 'Boston');
+  student1.displayDetails();

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let exp = "2 + 3";
+        let answer = eval(exp);
+        document.write("Eval " + answer + "<br>");
+
+        let input = "The best things in life are free";
+        let pattern = /e/;
+        let result1 = pattern.test(input);
+        document.write("Test: "+ result1 + "<br>");
+
+        let result2 = input.charAt(2); // or input[2]
+        document.write(result2);
+       
+        let result3 = input.slice(1,5);
+        document.write(result3 + "<br>");
+    </script>
+</body>
+</html>
