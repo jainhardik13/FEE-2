@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Get the user-defined array
+let userInputArray = new Array(5);
+
+// Get input values from the user at runtime
+for (let i = 0; i < 5; i++) {
+    userInputArray[i] = prompt(`Enter value ${i + 1}:`);
+}
+
+// Sort the array in ascending order
+userInputArray.sort();
+
+// Print the sorted array
+console.log("Sorted array:", userInputArray);
+
+        // Rest of the original code
+        const tech = [
+            ['html','css','javascript'],
+            ['java','spring','springboot'],
+            ['mysql','firebase','sqlserver'],
+        ];
+        console.log(tech[1][2]);
+        console.log(tech[0][1]);
+
+        const daysofWeek = [
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday',
+            'Sunday',
+        ];
+        let lengthofweek = daysofWeek.length;
+        console.log(lengthofweek);
+
+        daysofWeek.push('hardik');
+        result = daysofWeek.pop();
+        console.log(result);
+        let lengthofarray = daysofWeek.length;
+        console.log(lengthofarray);
+        console.log(daysofWeek.reverse());
+
+        const fruits = ["mango","apple","kiwi","plum"];
+        fruits.splice(2,0,"hardik","jain");
+        document.write(fruits);
+    </script>
+</body>
+</html>
