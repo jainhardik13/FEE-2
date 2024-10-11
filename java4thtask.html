@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Double Click Event</title>
+</head>
+<body>
+    <button id="myButton">Double Click Me</button>
+    <p id="message"></p>
+
+    <script>
+        const button = document.getElementById("myButton");
+        const message = document.getElementById("message");
+
+        button.addEventListener("dblclick", () => {
+            button.textContent = "You double-clicked me!";
+            button.style.backgroundColor = "yellow";
+            message.textContent = "Button was double-clicked";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event Handling - mouseover</title>
+    <style>
+        #hoverDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            margin-bottom: 10px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="hoverDiv"></div>
+    <p id="hoverMessage"></p>
+
+    <script>
+        const hoverDiv = document.getElementById('hoverDiv');
+        const hoverMessage = document.getElementById('hoverMessage');
+
+        hoverDiv.addEventListener('mouseover', () => {
+            hoverDiv.style.backgroundColor = 'lightgreen';
+            hoverMessage.textContent = 'You are hovering over the div.';
+        });
+
+        hoverDiv.addEventListener('mouseout', () => {
+            hoverDiv.style.backgroundColor = 'lightgray';
+            hoverMessage.textContent = '';
+        });
+    </script>
+
+</body>
+</html>

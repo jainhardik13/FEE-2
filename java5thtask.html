@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delayed Message Demo</title>
+</head>
+<body>
+    <h1>Delayed Message Demo</h1>
+    <button id="startButton">Start Delay</button>
+    <p id="output"></p>
+
+    <script>
+        const delayedMessage = new Promise(resolve => {
+            setTimeout(() => resolve("Data received"), 5000);
+        });
+
+        document.getElementById('startButton').addEventListener('click', () => {
+            document.getElementById('output').textContent = 'Waiting for data...';
+            delayedMessage.then(message => {
+                document.getElementById('output').textContent = message;
+            });
+        });
+    </script>
+</body>
+</html>

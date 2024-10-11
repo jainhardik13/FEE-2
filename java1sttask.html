@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mouse Event Handling</title>
+    <!doctype html>
+
+    <style>
+        #colorDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin-bottom: 10px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="colorDiv"></div>
+    <p id="message"></p>
+
+    <script>
+        const colorDiv = document.getElementById('colorDiv');
+        const message = document.getElementById('message');
+        let isClicked = false;
+
+        colorDiv.addEventListener('mousedown', () => {
+            colorDiv.style.backgroundColor = 'lightblue';
+            message.textContent = ''; 
+            isClicked = true;
+        });
+
+        colorDiv.addEventListener('mouseup', () => {
+            if (isClicked) {
+                colorDiv.style.backgroundColor = 'lightgreen';
+                message.textContent = 'Mouse button was pressed and then released.';
+                isClicked = false;
+            }
+        });
+    </script>
+
+</body>
+</html>
